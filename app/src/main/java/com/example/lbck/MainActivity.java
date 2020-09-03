@@ -29,7 +29,7 @@ public class MainActivity extends EBaseActivity {
         switch_btn = findViewById(R.id.switch_btn);
         frag_area = findViewById(R.id.frag_area);
         //快捷区
-        QuickAreaFragment quickAreaFragment = new QuickAreaFragment();
+
 
     }
 
