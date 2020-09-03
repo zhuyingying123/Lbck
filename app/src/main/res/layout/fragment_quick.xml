@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/quick_tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_ffffff"
+        android:paddingLeft="21dp" />
+
+    <LinearLayout
+        android:id="@+id/quick_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="21dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/quick_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/gift_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quick_iv"
+            android:textColor="@color/color_ffffff"
+            android:text="订单" />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/quick_ll"
+        android:id="@+id/quick_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:windowContentOverlay" />
+</RelativeLayout>

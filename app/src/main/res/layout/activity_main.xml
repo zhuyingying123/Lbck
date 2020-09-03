@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <com.example.lbck.SwitchButton
+        android:id="@+id/switch_btn"
+        android:layout_width="40dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        app:sb_background="@color/color_0066CA"
+        app:sb_checked_color="@color/color_0066CA"
+        app:sb_enable_effect="false"
+        app:sb_shadow_effect="false"
+        app:sb_show_indicator="false"
+        app:sb_uncheck_color="@color/color_ffffff" />
+
+    <FrameLayout
+        android:id="@+id/frag_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
